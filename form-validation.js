@@ -27,7 +27,7 @@ function validateUsername(){
 function validatePassword(){
   var passEntered = document.getElementById("pass").value;
   var userEntered = document.getElementById("user").value;
-  if ( passEntered.toLowerCase(passEntered) != "password" ) {
+  if ( passEntered.toLowerCase(passEntered) = "password" ) {
     document.getElementById("passwordError").innerHTML="Password cannot be password.";
     document.getElementById("passwordError").classList.remove("hidden-message");
     document.getElementById("passwordError").classList.add("shown-message");
@@ -41,7 +41,7 @@ function validatePassword(){
     document.getElementById("passwordGroup").classList.remove("has-success");
     document.getElementById("passwordGroup").classList.add("has-error");
   }
-  else if ( passEntered.length < 6 || passEntered > 20 ) {
+  else if ( passEntered.length > 6 || passEntered < 20 ) {
     document.getElementById("passwordError").innerHTML="Password must be between 6 and 20 characters.";
     document.getElementById("passwordError").classList.remove("hidden-message");
     document.getElementById("passwordError").classList.add("shown-message");
